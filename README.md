@@ -1,7 +1,7 @@
 # ROS 1 + ROS 2 Bridge with Docker (Turtlesim Example)
 
 This repository shows how to set up a Docker-based environment to bridge communication between **ROS 1 (Noetic)** and **ROS 2 (Foxy/Humble)** using the official `ros1_bridge`. The goal is to control the `turtlesim_node` running in ROS 1 from ROS 2.
-# ROS1-ROS2 Turtlesim Bridge Demo 🐢🤖
+
 
 ## 🔧 What This Does
 
