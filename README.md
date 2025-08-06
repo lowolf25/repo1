@@ -1,22 +1,22 @@
-````markdown
 # ROS 1 + ROS 2 Bridge with Docker (Turtlesim Example)
 
 This repository shows how to set up a Docker-based environment to bridge communication between **ROS 1 (Noetic)** and **ROS 2 (Foxy/Humble)** using the official `ros1_bridge`. The goal is to control the `turtlesim_node` running in ROS 1 from ROS 2.
+# ROS1-ROS2 Turtlesim Bridge Demo 🐢🤖
 
-## 🚀 Prerequisites
+## 🔧 What This Does
 
-- Docker (Windows/Linux/macOS)
-- X server for GUI output (e.g., [VcXsrv](https://sourceforge.net/projects/vcxsrv/) for Windows)
-- A shared Docker network
+- Run `roscore` + `turtlesim_node` in a ROS 1 (Noetic) container
+- Run ROS 2 (Foxy or Humble) in a separate container
+- Use `ros1_bridge` in a third container to forward topics
+- Send a velocity command from ROS 2 → ROS 1
 
-## 📦 Docker Network Setup
 
-Create a shared network:
+## 🐳 Docker Setup
+
+Create a shared Docker network:
 
 ```bash
 docker network create ros_net
-````
-
 ---
 
 ## 🐢 Run ROS 1 Container (Noetic)
@@ -89,6 +89,3 @@ You should see the turtle move in the ROS 1 `turtlesim` window.
 * ROS 2: Foxy / Humble
 * Docker: 24.x
 * Host: Windows 10/11 with WSL2 backend
-
----
-```
